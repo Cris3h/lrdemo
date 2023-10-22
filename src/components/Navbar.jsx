@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -98,24 +99,24 @@ export default function Navbar() {
         <List>
           <ListItem>
             <ListItemButton>
-              <a href="/MapAr" className="navbar-anchor">
+              <Link to="/MapAr" className="navbar-anchor">
                 Mapa
-              </a>
+              </Link>
             </ListItemButton>
           </ListItem>
 
           <ListItem>
             <ListItemButton>
-              <a href="/proyectos" className="navbar-anchor">
+              <Link to="/proyectos" className="navbar-anchor">
                 Proyectos
-              </a>
+              </Link>
             </ListItemButton>
           </ListItem>
           <ListItem>
             <ListItemButton>
-              <a href="/obras" className="navbar-anchor">
+              <Link to="/obras" className="navbar-anchor">
                 obras
-              </a>
+              </Link>
             </ListItemButton>
           </ListItem>
         </List>
@@ -127,24 +128,24 @@ export default function Navbar() {
         <List>
           <ListItem>
             <ListItemButton>
-              <a href="/informacion" className="navbar-anchor">
+              <Link to="/informacion" className="navbar-anchor">
                 Cancer de mama
-              </a>
+              </Link>
             </ListItemButton>
           </ListItem>
 
           <ListItem>
             <ListItemButton>
-              <a href="/Donaciones" className="navbar-anchor">
+              <Link to="/Donaciones" className="navbar-anchor">
                 Donaciones
-              </a>
+              </Link>
             </ListItemButton>
           </ListItem>
           <ListItem>
             <ListItemButton>
-              <a href="/Nosotres" className="navbar-anchor">
+              <Link to="/Nosotres" className="navbar-anchor">
                 Nosotres
-              </a>
+              </Link>
             </ListItemButton>
           </ListItem>
         </List>
