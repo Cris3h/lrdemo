@@ -1,0 +1,46 @@
+
+.footer-main-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    border-style: solid none none;
+    border-color: rgb(251, 132, 171);
+    color: rgb(193, 136, 145);
+}
+
+.us-container{
+    padding-left: 8px;
+}
+.us-container a{
+    text-decoration: none;
+    font-weight: normal;
+    color: rgb(193, 136, 145);
+}
+.media-container{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ig-container img{
+    width: 25px;
+    margin: 3px;
+}
+
+.fb-container img{
+    width: 25px;
+    margin: 3px;
+}
+
+.contact-container{
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 8px;
+}
+.contact-container p{
+    font-size: 10px;
+    margin: 3px;
+}

@@ -1,25 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import MapAr from "./components/tabs/displayMap/MapAr";
+import ListProjects from "./components/tabs/projects/ListProjects";
+import Donations from "./components/tabs/Donations";
+import Loading from "./components/Loading";
+
+import { useEffect, useState } from "react";
+import { createContext } from "react";
+import test from './testjson/test.json'
+
+export const MyContext = createContext();
+
+function map(r){
+  return r.map(e=> e)
+}
 
 function App() {
+  const [artWork, setArtWork] = useState();
+  const [loading, setLoading] = useState(true);
+
+  
+  // useEffect(() => {
+  //   fetch(`http://localhost:3001/proyectos`)
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setArtWork(data);
+  //       setLoading(false);
+  //     });
+  // }, []);
+
+
+  useEffect(()=> {
+    let render = map(test)
+    setArtWork(render);
+    setLoading(false)
+  },[])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <MyContext.Provider value={{ artWork, setArtWork }}>
+        {loading ? (
+          <Loading />
+          ) : (
+            <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/MapAr" element={<MapAr />} />
+            <Route path="/proyectos" element={<ListProjects />} />
+            <Route path="/donations" element={<Donations />} />
+            <Route />
+          </Routes>
+        )}
+
+      </MyContext.Provider>
     </div>
-  );
+);
 }
 
 export default App;
