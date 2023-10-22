@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import ItemListProyect from "./ItemListProyect";
 import Navbar from "../../Navbar";
 import { MyContext } from "../../../App";
+import { Link } from "react-router-dom";
 
 
 function ListProjects() {
@@ -35,7 +36,7 @@ function ListProjects() {
         } )
       }
       <div className="asd">
-        <a href="/"> back </a>
+        <Link to="/"> back </Link>
       </div>
     </div>
   );

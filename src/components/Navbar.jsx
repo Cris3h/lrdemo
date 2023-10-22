@@ -99,7 +99,7 @@ export default function Navbar() {
         <List>
           <ListItem>
             <ListItemButton>
-              <Link to="./MapAr" className="navbar-anchor">
+              <Link to="/MapAr" className="navbar-anchor">
                 Mapa
               </Link>
             </ListItemButton>
@@ -107,18 +107,19 @@ export default function Navbar() {
 
           <ListItem>
             <ListItemButton>
-              <Link to="./proyectos" className="navbar-anchor">
-                Proyectos
+              <Link to="/proyectos" className="navbar-anchor">
+                Murales 
               </Link>
             </ListItemButton>
           </ListItem>
-          <ListItem>
+
+          {/* <ListItem>
             <ListItemButton>
               <Link to="./obras" className="navbar-anchor">
                 obras
               </Link>
             </ListItemButton>
-          </ListItem>
+          </ListItem> */}
         </List>
         {/* CIERRE LISTA DE ITEMS DENTRO DEL "DRAWER" */}
 
@@ -128,7 +129,7 @@ export default function Navbar() {
         <List>
           <ListItem>
             <ListItemButton>
-              <Link to="./informacion" className="navbar-anchor">
+              <Link to="/informacion" className="navbar-anchor">
                 Cancer de mama
               </Link>
             </ListItemButton>
@@ -136,14 +137,14 @@ export default function Navbar() {
 
           <ListItem>
             <ListItemButton>
-              <Link to="./Donaciones" className="navbar-anchor">
+              <Link to="/Donaciones" className="navbar-anchor">
                 Donaciones
               </Link>
             </ListItemButton>
           </ListItem>
           <ListItem>
             <ListItemButton>
-              <Link to="./Nosotres" className="navbar-anchor">
+              <Link to="/Nosotres" className="navbar-anchor">
                 Nosotres
               </Link>
             </ListItemButton>

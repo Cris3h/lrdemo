@@ -2,7 +2,11 @@ import React, { useContext } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import "../styles/home.css";
+
 import { MyContext } from "../App";
+
+import BChomeImg from "../images/BChomeImg.jpg";
+import ImgListonRosa from "../images/ImgListonRosa.png";
 
 function Home() {
   // const { artWork } = useContext(MyContext);
@@ -14,7 +18,13 @@ function Home() {
         <Navbar />
       </div>
       <div className="title-container">
-        <p>liston rosa</p>
+        <img
+          src={ImgListonRosa}
+          alt="liston rosa logo"
+          style={{
+            width: "110px",
+          }}
+        />
       </div>
       <div className="quote-container">
         <p>
@@ -22,10 +32,7 @@ function Home() {
         </p>
       </div>
       <div className="img-home-container">
-        <img
-          src="https://www.cdc.gov/tobacco/campaign/tips/groups/social-media-images/groups-TW-600x321.jpg?_=82358"
-          alt="group people"
-        />
+        <img src={BChomeImg} alt="group people" />
       </div>
       <div className="description-container">
         <p>

@@ -1,14 +1,22 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Esto evita la barra de desplazamiento horizontal */
+    overflow-x: hidden;
     overflow-y: scroll;
     font-family: 'Caveat', cursive;
     font-family: 'Nunito Sans', sans-serif;
+
+
+    background-image: url('../images/bg2.png');
+    background-repeat:repeat;
+    /* background-position:center; */
+    background-size:cover;
+    
 }
 
 p{
-    color: rgb(178, 108, 120)
+    color: rgb(68, 37, 42);
+    font-weight: 200;
 }
 
 .home-main{
