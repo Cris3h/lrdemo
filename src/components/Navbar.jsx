@@ -99,7 +99,7 @@ export default function Navbar() {
         <List>
           <ListItem>
             <ListItemButton>
-              <Link to="/lrdemo/MapAr" className="navbar-anchor">
+              <Link to="./MapAr" className="navbar-anchor">
                 Mapa
               </Link>
             </ListItemButton>
@@ -107,14 +107,14 @@ export default function Navbar() {
 
           <ListItem>
             <ListItemButton>
-              <Link to="/lrdemo/proyectos" className="navbar-anchor">
+              <Link to="./proyectos" className="navbar-anchor">
                 Proyectos
               </Link>
             </ListItemButton>
           </ListItem>
           <ListItem>
             <ListItemButton>
-              <Link to="/lrdemo/obras" className="navbar-anchor">
+              <Link to="./obras" className="navbar-anchor">
                 obras
               </Link>
             </ListItemButton>
@@ -128,7 +128,7 @@ export default function Navbar() {
         <List>
           <ListItem>
             <ListItemButton>
-              <Link to="/lrdemo/informacion" className="navbar-anchor">
+              <Link to="./informacion" className="navbar-anchor">
                 Cancer de mama
               </Link>
             </ListItemButton>
@@ -136,14 +136,14 @@ export default function Navbar() {
 
           <ListItem>
             <ListItemButton>
-              <Link to="/lrdemo/Donaciones" className="navbar-anchor">
+              <Link to="./Donaciones" className="navbar-anchor">
                 Donaciones
               </Link>
             </ListItemButton>
           </ListItem>
           <ListItem>
             <ListItemButton>
-              <Link to="/lrdemo/Nosotres" className="navbar-anchor">
+              <Link to="./Nosotres" className="navbar-anchor">
                 Nosotres
               </Link>
             </ListItemButton>
