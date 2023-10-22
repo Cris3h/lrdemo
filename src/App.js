@@ -43,9 +43,9 @@ function App() {
           <Router>
             <Routes>
               <Route exact path="/" element={<Home />} />
-              <Route path="/MapAr" element={<MapAr />} />
-              <Route path="/proyectos" element={<ListProjects />} />
-              <Route path="/donations" element={<Donations />} />
+              <Route path="/lrdemo/MapAr" element={<MapAr />} />
+              <Route path="/lrdemo/proyectos" element={<ListProjects />} />
+              <Route path="/lrdemo/donations" element={<Donations />} />
               <Route />
             </Routes>
           </Router>
