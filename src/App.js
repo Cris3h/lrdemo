@@ -1,4 +1,4 @@
-import { Routes, Route, Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import MapAr from "./components/tabs/displayMap/MapAr";
 import ListProjects from "./components/tabs/projects/ListProjects";
@@ -40,7 +40,6 @@ function App() {
         {loading ? (
           <Loading />
         ) : (
-          <Router>
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route path="/MapAr" element={<MapAr />} />
@@ -48,7 +47,6 @@ function App() {
               <Route path="/donations" element={<Donations />} />
               <Route />
             </Routes>
-          </Router>
         )}
       </MyContext.Provider>
     </div>
