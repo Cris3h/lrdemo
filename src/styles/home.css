@@ -5,13 +5,10 @@ body {
     overflow-y: scroll;
     font-family: 'Caveat', cursive;
     font-family: 'Nunito Sans', sans-serif;
-
-
     background-image: url('../images/bg2.png');
     background-repeat:repeat;
     /* background-position:center; */
-    background-size:calc(150%);
-    
+    background-size:calc(150%); 
 }
 
 p{
@@ -36,6 +33,13 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.img-title{
+    width: 300px;
+    filter: drop-shadow(8px 5px 5px gray);
+    transform: rotate(-5deg);
+    margin-top: -25px;
 }
 
 .quote-container{

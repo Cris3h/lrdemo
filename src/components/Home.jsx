@@ -21,9 +21,7 @@ function Home() {
         <img
           src={ImgListonRosa}
           alt="liston rosa logo"
-          style={{
-            width: "110px",
-          }}
+          className="img-title"
         />
       </div>
       <div className="quote-container">

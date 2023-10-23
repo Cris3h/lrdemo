@@ -4,6 +4,7 @@ import ItemListProyect from "./ItemListProyect";
 import Navbar from "../../Navbar";
 import { MyContext } from "../../../App";
 import { Link } from "react-router-dom";
+import ImgListonRosa from '../../../images/ImgListonRosa.png'
 
 
 function ListProjects() {
@@ -16,7 +17,13 @@ function ListProjects() {
       <div className="nav-bar-container">
         <Navbar />
       </div>
-      <div className="title-listproject-container">Liston Rosa</div>
+      <div className="title-container">
+      <img
+          src={ImgListonRosa}
+          alt="liston rosa logo"
+          className="img-title"
+        />
+      </div>
       <div className="listproject-header-container">
         <p>Te contamos una historia</p>
       </div>

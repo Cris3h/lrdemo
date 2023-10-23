@@ -97,6 +97,13 @@ export default function Navbar() {
         </List> */}
 
         <List>
+        <ListItem>
+            <ListItemButton>
+              <Link to="/" className="navbar-anchor">
+                Inicio
+              </Link>
+            </ListItemButton>
+          </ListItem>
           <ListItem>
             <ListItemButton>
               <Link to="/MapAr" className="navbar-anchor">
